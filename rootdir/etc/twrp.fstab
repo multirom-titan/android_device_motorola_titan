@@ -1,0 +1,11 @@
+# mount point   fstype          device
+
+/data         f2fs      /dev/block/platform/msm_sdcc.1/by-name/userdata     flags=fsflags="inline_xattr"
+/cache        ext4      /dev/block/platform/msm_sdcc.1/by-name/cache		flags=backup=0
+/system       ext4      /dev/block/platform/msm_sdcc.1/by-name/system
+/boot         emmc      /dev/block/platform/msm_sdcc.1/by-name/boot
+/recovery     emmc      /dev/block/platform/msm_sdcc.1/by-name/recovery		flags=backup=1;display=Recovery
+/pds          emmc      /dev/block/platform/msm_sdcc.1/by-name/pds          flags=backup=1;display=PDS
+/usb-otg      vfat      /dev/block/sda1   /dev/block/sda                    flags=display="USB OTG";storage;wipeingui;removable
+/devices/msm_sdcc.2/mmc_host*                       auto         auto    defaults                                                                       voldmanaged=sdcard1:auto,noemulatedsd
+
