@@ -32,6 +32,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/kernel:kernel \
     $(LOCAL_PATH)/fstab.qcom:root/fstab.qcom \
     $(LOCAL_PATH)/recovery/etc/twrp.fstab:root/etc/twrp.fstab \
+    $(LOCAL_PATH)/recovery/sbin/mount:root/sbin/mount \
     $(LOCAL_PATH)/recovery/sbin/zip:root/sbin/zip
 
 PRODUCT_NAME := cm_titan
