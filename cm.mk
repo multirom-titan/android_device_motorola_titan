@@ -31,7 +31,8 @@ PRODUCT_PACKAGES += charger charger_res_images
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/kernel:kernel \
     $(LOCAL_PATH)/fstab.qcom:root/fstab.qcom \
-    $(LOCAL_PATH)/recovery/etc/twrp.fstab:root/etc/twrp.fstab
+    $(LOCAL_PATH)/recovery/etc/twrp.fstab:root/etc/twrp.fstab \
+    $(LOCAL_PATH)/recovery/sbin/zip:root/sbin/zip
 
 PRODUCT_NAME := cm_titan
 PRODUCT_DEVICE := titan
