@@ -53,6 +53,16 @@ TW_NO_EXFAT_FUSE := true
 RECOVERY_SDCARD_ON_DATA := true
 HAVE_SELINUX := true
 BOARD_RECOVERY_SWIPE := true
+TW_INCLUDE_L_CRYPTO := true
 
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/msm_hsusb/gadget/lun%d/file
 
+# MultiRom
+MR_INPUT_TYPE := type_b
+MR_INIT_DEVICES := device/motorola/titan/multirom/mr_init_devices.c
+MR_DPI := hdpi
+MR_DPI_FONT := 160
+MR_FSTAB := device/motorola/titan/recovery/etc/twrp.fstab
+MR_KEXEC_MEM_MIN := 0x05000000
+MR_KEXEC_DTB := true
+MR_CONTINUOUS_FB_UPDATE := true
