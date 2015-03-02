@@ -17,14 +17,11 @@
 # Sample: This is where we'd set a backup provider if we had one
 # $(call inherit-product, device/sample/products/backup_overlay.mk)
 
-# Get the prebuilt list of APNs
-$(call inherit-product, vendor/omni/config/gsm.mk)
-
 # Inherit from the common Open Source product configuration
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
-# Inherit from our custom product configuration
-$(call inherit-product, vendor/omni/config/common.mk)
+# Inherit some common CM stuff.
+$(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
 LOCAL_PATH := device/motorola/titan
 
@@ -36,7 +33,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/fstab.qcom:root/fstab.qcom \
     $(LOCAL_PATH)/recovery/etc/twrp.fstab:root/etc/twrp.fstab
 
-PRODUCT_NAME := omni_titan
+PRODUCT_NAME := cm_titan
 PRODUCT_DEVICE := titan
 PRODUCT_BRAND := Motorola
 PRODUCT_MANUFACTURER := Motorola
