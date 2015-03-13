@@ -31,6 +31,10 @@ const char *mr_init_devices[] =
     "/sys/devices/virtual/android_usb/android0/f_adb",
     "/sys/bus/usb",
 
+    // sdcard
+    "/sys/block/mmcblk1",
+    "/sys/devices/msm_sdcc.2/mmc_host*",
+
     // USB drive is in here
     "/sys/module/ehci_hcd*",
 
