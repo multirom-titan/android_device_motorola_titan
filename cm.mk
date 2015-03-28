@@ -25,9 +25,6 @@ $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
 LOCAL_PATH := device/motorola/titan
 
-# Charger
-PRODUCT_PACKAGES += charger charger_res_images
-
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/kernel:kernel \
     $(LOCAL_PATH)/dt.img:dt.img \
